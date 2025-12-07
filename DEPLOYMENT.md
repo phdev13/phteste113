@@ -31,6 +31,11 @@ Este projeto está configurado para fazer deploy automático no Render.com atrav
 
 - `GEMINI_API_KEY`: Sua chave de API do Google Gemini
 
+### Resolução de Conflitos de Dependências
+
+O projeto usa React 19 com `react-helmet-async` que tem peer dependencies para versões anteriores do React. 
+O `render.yaml` está configurado com `--legacy-peer-deps` para resolver isso automaticamente.
+
 ### Monitoramento
 
 - Acesse o dashboard do Render para ver logs
