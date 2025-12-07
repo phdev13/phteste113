@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: ph-portfolio
+    env: node
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: npm run preview
+    envVars:
+      - key: GEMINI_API_KEY
+        scope: build
