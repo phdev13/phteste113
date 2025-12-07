@@ -3,7 +3,7 @@ services:
     name: ph-portfolio
     env: node
     plan: free
-    buildCommand: npm install --legacy-peer-deps && npm run build
+    buildCommand: npm install && npm run build
     startCommand: npm run preview
     envVars:
       - key: GEMINI_API_KEY
