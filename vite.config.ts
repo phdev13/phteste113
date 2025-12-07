@@ -27,7 +27,6 @@ export default defineConfig(({ mode }) => {
         outDir: 'dist',
         sourcemap: false,
         minify: 'terser',
-        cssMinify: true,
         rollupOptions: {
           output: {
             manualChunks: {
